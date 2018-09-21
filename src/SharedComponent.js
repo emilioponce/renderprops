@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-const SECRET_TO_LIFE = 42;
+const PATTERN_NAME = "Render Props";
 
 class SharedComponent extends Component {
   render() {
-    return <div>{this.props.render({ secretToLife: SECRET_TO_LIFE })}</div>;
+    return <div>{this.props.render({ patterName: PATTERN_NAME })}</div>;
   }
 }
 
